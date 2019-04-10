@@ -41,8 +41,9 @@ To retrieve Steam games with similar store screenshots, image features are:
 
 To avoid messing features for banners and screenshots, edit the code in [`download-steam-banners`](https://github.com/woctezuma/download-steam-banners) as follows.
 
-Edit `build_feature_index.py` so that:
--   `get_features_folder_name()` does not point to the output folder already used for **banners**,
+### Edit `build_feature_index.py`
+
+Ensure `get_features_folder_name()` does not point to the output folder already used for **banners**.
 
 ```python
 def get_features_folder_name():
@@ -51,7 +52,8 @@ def get_features_folder_name():
     return features_folder_name
 ```
 
--   `build_feature_index()` is called with argument `data_folder` pointing to the input folder for **screenshots**.
+Ensure `build_feature_index()` is called with argument:
+-   `data_folder` pointing to the input folder for **screenshots**.
 
 ```python
 if __name__ == '__main__':
@@ -60,8 +62,11 @@ if __name__ == '__main__':
                         data_folder='128x128/') # <--- here
 ```
 
-Edit `retrieve_similar_features.py` so that:
--   `batch_retrieve_similar_features()` is called with arguments `data_folder` as above, and `images_are_store_banners=False`.
+### Edit `retrieve_similar_features.py`
+
+Ensure `batch_retrieve_similar_features()` is called with arguments:
+-   `data_folder` as above,
+-   `images_are_store_banners=False`.
 
 ```python
 if __name__ == '__main__':
