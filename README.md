@@ -37,7 +37,7 @@ To retrieve Steam games with similar store screenshots, image features are:
 
 ## Results
 
-TODO
+Results are shown [on the Wiki](https://github.com/woctezuma/download-steam-screenshots/wiki).
 
 ## References
 
