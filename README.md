@@ -56,4 +56,4 @@ TODO
 [codecov-image]: <https://codecov.io/gh/woctezuma/download-steam-screenshots/branch/master/graph/badge.svg>
 
 [codacy]: <https://www.codacy.com/app/woctezuma/download-steam-screenshots>
-[codacy-image]: <https://api.codacy.com/project/badge/Grade/TODO>
+[codacy-image]: <https://api.codacy.com/project/badge/Grade/b6dbd92572f747b68068e904337159cc>
