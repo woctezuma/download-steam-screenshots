@@ -37,6 +37,40 @@ To retrieve Steam games with similar store screenshots, image features are:
 2.   either concatenated, or merged via a pooling process (average or maximum pooling),
 3.   compared based on cosine similarity with [`retrieve_similar_features.py`](https://github.com/woctezuma/download-steam-banners/blob/master/retrieve_similar_features.py).
 
+## Caveat
+
+To avoid messing features for banners and screenshots, edit the code in [`download-steam-banners`](https://github.com/woctezuma/download-steam-banners) as follows.
+
+Edit `build_feature_index.py` so that:
+-   `get_features_folder_name()` does not point to the output folder already used for **banners**,
+
+```python
+def get_features_folder_name():
+    features_folder_name = 'features_for_screenshots/' # <--- here
+    pathlib.Path(features_folder_name).mkdir(exist_ok=True)
+    return features_folder_name
+```
+
+-   `build_feature_index()` is called with argument `data_folder` pointing to the input folder for **screenshots**.
+
+```python
+if __name__ == '__main__':
+    build_feature_index(save_keras_output=True,
+                        include_top=False,
+                        data_folder='128x128/') # <--- here
+```
+
+Edit `retrieve_similar_features.py` so that:
+-   `batch_retrieve_similar_features()` is called with arguments `data_folder` as above, and `images_are_store_banners=False`.
+
+```python
+if __name__ == '__main__':
+    for pooling in [None, 'max', 'avg']:
+        batch_retrieve_similar_features(pooling,
+                                        data_folder='128x128/', # <--- here
+                                        images_are_store_banners=False) # <--- here
+```
+
 ## Results
 
 Results are shown [on the Wiki](https://github.com/woctezuma/download-steam-screenshots/wiki).
