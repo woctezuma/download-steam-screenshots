@@ -30,6 +30,8 @@ Otherwise, you would have to:
 
 ## Usage
 
+Store screenshots are first center-cropped and then resized to 128x128 with [`batch_resize_images.py`](https://github.com/woctezuma/download-steam-banners/blob/master/batch_resize_images.py).
+
 To retrieve Steam games with similar store screenshots, image features are:
 1.   extracted by a neural net with [`build_feature_index.py`](https://github.com/woctezuma/download-steam-banners/blob/master/build_feature_index.py),
 2.   either concatenated, or merged via a pooling process (average or maximum pooling),
