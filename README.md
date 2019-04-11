@@ -80,6 +80,8 @@ if __name__ == '__main__':
 
 Results are shown [on the Wiki](https://github.com/woctezuma/download-steam-screenshots/wiki).
 
+An in-depth commentary is provided [on the Wiki](https://github.com/woctezuma/download-steam-screenshots/wiki/Commentary).
+
 ## References
 
 -   [`download-steam-banners`](https://github.com/woctezuma/download-steam-banners): retrieve Steam games with similar store **banners**.
