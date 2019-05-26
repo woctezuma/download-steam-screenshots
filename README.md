@@ -89,7 +89,7 @@ An in-depth commentary is provided [on the Wiki](https://github.com/woctezuma/do
 It is possible to highlight games with *unique* store screenshots, by applying a threshold to similarity values output by the algorithm.
 This is done in [`find_unique_games.py`](https://github.com/woctezuma/download-steam-banners/blob/master/find_unique_games.py):
 -   cosine similarity is used to compare features,
--   a game is *unique* if the similarity score between a query game and its most similar game (other than itself) is lower than or equal to an arbitrary threshold of 1%.
+-   a game is *unique* if the similarity score between a query game and its most similar game (other than itself) is lower than or equal to an arbitrary threshold.
 
 Results are shown [here](https://github.com/woctezuma/download-steam-screenshots/wiki/Unique_Games).
 
