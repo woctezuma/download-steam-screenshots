@@ -97,6 +97,7 @@ Results are shown [here](https://github.com/woctezuma/download-steam-screenshots
 ## References
 
 -   [`download-steam-banners`](https://github.com/woctezuma/download-steam-banners): retrieve Steam games with similar store **banners**.
+-   [`match-steam-banners`](https://github.com/woctezuma/match-steam-banners): retrieve Steam games with similar store **banners** using MobileNet v3.
 
 <!-- Definitions -->
 
