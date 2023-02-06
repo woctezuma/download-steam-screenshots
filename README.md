@@ -99,8 +99,8 @@ Results are shown [here](https://github.com/woctezuma/download-steam-screenshots
 
 <!-- Definitions -->
 
-[build]: <https://travis-ci.org/woctezuma/download-steam-screenshots>
-[build-image]: <https://travis-ci.org/woctezuma/download-steam-screenshots.svg?branch=master>
+[build]: <https://github.com/woctezuma/download-steam-screenshots/actions>
+[build-image]: <https://github.com/woctezuma/download-steam-screenshots/workflows/Python package/badge.svg?branch=master>
 
 [pyup]: <https://pyup.io/repos/github/woctezuma/download-steam-screenshots/>
 [dependency-image]: <https://pyup.io/repos/github/woctezuma/download-steam-screenshots/shield.svg>
